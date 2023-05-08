@@ -50,7 +50,7 @@ package("python")
     end
 
     if is_host("linux", "bsd") then
-        add_deps("libffi", "zlib", {host = true, private = true})
+        add_deps("libffi", "zlib", {host = true})
         add_syslinks("util", "pthread", "dl")
     end
 
