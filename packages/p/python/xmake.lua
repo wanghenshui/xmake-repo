@@ -44,7 +44,7 @@ package("python")
     end
 
     add_configs("headeronly", {description = "Use header only version.", default = false, type = "boolean"})
-
+ 
     if not is_plat(os.host()) or not is_arch(os.arch()) then
         set_kind("binary")
     end

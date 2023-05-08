@@ -16,7 +16,7 @@ package("libffi")
     elseif is_plat("macosx") then
         add_extsources("brew::libffi")
     end
-
+ 
     on_load("macosx", "linux", "bsd", "mingw", function (package)
         if package:gitref() then
             package:add("deps", "autoconf", "automake", "libtool")
